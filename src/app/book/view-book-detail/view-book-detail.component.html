@@ -1,0 +1,6 @@
+<p>view-book-detail works!</p>
+<div *ngIf="book | async as b">
+    <span>id: {{b.id}}, name: {{b.name}}, author: {{b.author}}, price: {{b.price}}</span>
+</div>
+<br>
+<button type="button" (click)="goBack()">Go Back</button>
